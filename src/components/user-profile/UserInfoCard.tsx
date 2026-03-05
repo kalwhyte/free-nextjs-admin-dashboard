@@ -7,6 +7,13 @@ import Input from "../form/input/InputField";
 import Label from "../form/Label";
 
 export default function UserInfoCard() {
+  /**
+   * This component displays the user's personal information and allows them to edit it
+   * - through a modal. The `useModal` hook is used to manage the state of the modal, and
+   * - the `handleSave` function is a placeholder for the logic that would handle saving
+   * - the changes made by the user. The modal contains a form with input fields for social
+   * - links and personal information, which can be updated by the user.
+   */
   const { isOpen, openModal, closeModal } = useModal();
   const handleSave = () => {
     // Handle save logic here
